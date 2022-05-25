@@ -1,16 +1,15 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
-    margin: 0;
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 150px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .container {
-    margin: o auto;
-    max-width: 1200px;
     background-color: rgb(231,254,254);
     text-align: center;
     /*background-attachment: fixed;*/
@@ -19,17 +18,19 @@ body {
 
 .header {
     color: dodgerblue;
-    /*margin: 0 auto;
-    width: 550px;*/
 }
 
 
 .header__image{
-    background: url('BrookBarket.jpg') center/cover no-repeat;
+    background: url('./image/brookbarket.jpg') center/cover no-repeat;
     max-width: 600px;
     height: 350px;
     border: 10px solid  white;
     margin: 0 auto;
+}
+
+.about {
+    color: rgb(60, 174, 231);
 }
 
 .about__article {
@@ -42,14 +43,14 @@ body {
     flex-wrap: wrap;
 }
 
-.about__title, .about__article__description{
-    color: rgb(60, 174, 231);
+.about__title{
+    padding: 10px 0;
 }
 
 .about__article__image {
     width: 300px;
     height: 250px;
-    background: url('facts.jpg') center/cover no-repeat;
+    background: url(./image/facts.jpg) center/cover no-repeat;
     margin-bottom: 10px;
 }
 
@@ -79,26 +80,43 @@ body {
 }
 
 .photos__container__photo_element_1 {
-    background: url('fact1.jpg') center/cover no-repeat;
+    background: url(./image/fact1.jpg) center/cover no-repeat;
 }
 
 .photos__container__photo_element_2 {
-    background: url('fact2.jpg') center/cover no-repeat;
+    background: url(./image/fact2.jpg) center/cover no-repeat;
 }
 
 .photos__container__photo_element_3 {
-    background: url('fact3.jpg') center/cover no-repeat;
+    background: url(./image/fact3.jpg) center/cover no-repeat;
 }
 
 .photos__container__photo_element_4 {
-    background: url('fact4.jpg') center/cover no-repeat;
+    background: url(./image/fact4.jpg) center/cover no-repeat;
 }
 
 .photos__container__photo_element_5 {
-    background: url('fact5.jpg') center/cover no-repeat;
+    background: url(./image/fact5.jpg) center/cover no-repeat;
 }
 
 .photos__container__photo_element_6 {
-    background: url('fact6.jpg') center/cover no-repeat;
+    background: url(./image/fact6.jpg) center/cover no-repeat;
+}
+.checkout{
+    padding: 20px 0px 20px 0px;
 }
 
+.contact-information {
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+    background-color: rgb(209, 250, 250);
+}
+
+.contact-information .tel{
+    font-weight: 600;
+}
+
+.footer{
+    margin: 0;
+    max-width: 300;
+}
